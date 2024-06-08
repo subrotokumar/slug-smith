@@ -1,4 +1,4 @@
-package dev.subrotokumar;
+package dev.subrotokumar.slugsmith;
 
 import java.util.ArrayList;
 import java.util.Collections;
