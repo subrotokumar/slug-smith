@@ -90,7 +90,6 @@ public class SlugSmith {
         Options opts = (options != null) ? options : defaultOptions;
         List<String> words = new ArrayList<>();
         for (int i = 0; i < numWords; i++) {
-            System.out.println(opts.getWordSelector().size());
             WordSelector partOfSpeech = opts.getWordSelector().get(i);
             List<String> candidates = getWordsByCategory(partOfSpeech, opts.getCategories().getOrDefault(partOfSpeech, Collections.emptyList()));
             String rand = candidates.get(new Random().nextInt(candidates.size()));
